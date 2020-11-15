@@ -1,18 +1,37 @@
 import React, { Component } from "react";
 import { StyleSheet, Text, View } from "react-native";
+import Colors  from '../styles/Colors';
 
 export default class Button extends Component {
   constructor(props) {
     super(props);
   }
   render() {
-    return (
-      <View style={styles.container}>
-        <Text style={styles.text}>{this.props.title}</Text>
-      </View>
-    );
+      return <View>{this.buttonTypes()}</View>;
   }
+
+
+buttonTypes (){
+
+  if (this.props.primaryText) {
+    return (
+    <View style={styles.container, styles.primaryText}>
+      <Text style={styles.primaryText}>{this.props.title}</Text>
+    </View>
+    )
+  }
+  else if (this.props.secondary) {
+    return (
+    <View style={styles.container, styles.secondaryText}>
+      <Text style={styles.secondaryText}>{this.props.title}</Text>
+    </View>
+    )
+  }
+  
 }
+
+}
+
 
 const styles = StyleSheet.create({
   container: {
@@ -21,8 +40,15 @@ const styles = StyleSheet.create({
     height: 57,
     left: 45,
     top: 20,
-    backgroundColor: "#F21D52",
     borderRadius: 15,
+  },
+  primaryText: {
+    backgroundColor: Colors.PRIMARY,
+    color: COLORS.WHITE,
+  },
+  secondaryText: {
+    backgroundColor: Colors.SECONDARY,
+    color: COLORS.WHITE,
   },
   text: {
     position: "absolute",
@@ -33,7 +59,6 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     fontSize: 18,
     lineHeight: 27,
-
     display: "flex",
     alignItems: "center",
     textAlign: "center",
