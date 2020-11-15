@@ -44,11 +44,11 @@ const styles = StyleSheet.create({
   },
   primaryText: {
     backgroundColor: Colors.PRIMARY,
-    color: COLORS.WHITE,
+    color: Colors.WHITE,
   },
   secondaryText: {
     backgroundColor: Colors.SECONDARY,
-    color: COLORS.WHITE,
+    color: Colors.WHITE,
   },
   text: {
     position: "absolute",
