@@ -8,6 +8,7 @@
     "eject": "expo eject"
   },
   "dependencies": {
+
     "@expo-google-fonts/poppins": "^0.1.0",
     "@react-native-community/masked-view": "0.1.10",
     "@react-navigation/native": "^5.8.9",
@@ -27,5 +28,18 @@
   "devDependencies": {
     "@babel/core": "~7.9.0"
   },
-  "private": true
+  "private": true,
+  "name": "health-hackumbc2020",
+  "description": "",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neanderthalensis/health-hackumbc2020.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neanderthalensis/health-hackumbc2020/issues"
+  },
+  "homepage": "https://github.com/neanderthalensis/health-hackumbc2020#readme"
 }

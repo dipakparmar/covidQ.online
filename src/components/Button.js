@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { Component } from "react";
 import { StyleSheet, Text, View } from "react-native";
 import Colors  from '../styles/Colors';
@@ -66,3 +67,5 @@ const styles = StyleSheet.create({
     color: "#252B63",
   },
 });
+=======
+>>>>>>> 5ee3b0dc9b8c6582037a2578a49492835e8cf417
